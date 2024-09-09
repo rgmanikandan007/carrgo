@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", system-ui;
+}
+
+/* Banner Start */
+.banner{
+    background-size: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.733) ), url(/images/banner_bg_img.png);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);  
+}
+.banner-right img{
+    width: 600px;
+    margin-top: 3rem;
+}
+.banner-left h2{
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 2rem;
+}
+.banner-left p{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+.banner-left button{
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #fecc18;
+    color: black;
+}
+.banner-left{
+    margin-top: 1rem;
+}
+.banner-container{
+    display: flex;
+    padding: 5rem;
+}
+
+@media screen and (max-width: 768px){
+    .banner{
+        background-size: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.733) ), url(/images/banner_bg_img.png);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);  
+    }
+    .banner-right img{
+        width: 400px;
+    }
+    .banner-left h2{
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 1.5rem;
+    }
+    .banner-left p{
+        color: #fff;
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+    .banner-left button{
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        border: none;
+        background-color: #fecc18;
+        color: black;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .banner-container{
+        display: flex;
+        padding: 4rem 2rem 2rem 2rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .banner{
+        background-size: 100%;
+        height: 290px;
+        background-repeat: no-repeat;
+        background: fixed;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.733) ), url(/images/banner_bg_img.png);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);  
+    }
+    .banner-right img{
+        width: 200px;
+    }
+    .banner-right{
+        text-align: center;
+    }
+    .banner-left h2{
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .banner-left p{
+        color: #fff;
+        font-size: 12px;
+        margin-bottom: 1.5rem;
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-left button{
+        padding: 0.3rem 0.8rem;
+        border-radius: 30px;
+        border: none;
+        background-color: #fecc18;
+        color: black;
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        justify-content: center;
+    }
+    .banner-container{
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+/* Banner End */
+
+
+/* Work Star */
+.work-header{
+    text-align: center;
+}
+.work-child{
+    text-align: center;
+}
+.work-child img{
+    border: #464646 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+}
+/* Work End */
