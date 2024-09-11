@@ -11,9 +11,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
+
+
+    <!-- Navbar Start -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="topnavbar">
+                <div class="logo"><img src="images/logo-main.png" alt="logo-main"></div>
+                <div class="search-box"><input type="text" placeholder="Search..."></div>
+                <div class="dash">DRIVER DASHBOARD</div>
+                <div class="top-icon"><i class="fa-solid fa-robot"></i>DRIVE WITH US</div>
+                <div class="top-icon"><i class="fa-solid fa-car"></i>BOOK A RIDE</div>
+            </div>
+            <div class="toggle-btn" onclick="toggleNavbar()">☰ Menu</div>
+            <div class="bottomnavbar">
+                <div class="navsection">
+                    <nav>
+                        <a href="home.html">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="ourservices.html">OUR SERVICES</a>
+                        <a href="portfolio.html">OUR VEHICLES</a>
+                        <a href="shop.html">PACKAGES</a>
+                        <a href="contact.html">CONTACT</a>
+                    </nav>
+                </div>
+                <div class="navbtn"><button>GET STARTED</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
     <!-- Banner Start -->
     <div class="banner">
         <div class="banner-container">
@@ -36,17 +69,99 @@
                 <h2>How It Work</h2>
                 <img src="images/header-border.png" alt="img">
             </div>
-            <div class="work-content">
-                <div class="work-child">
-                    <img src="images/work1.png" alt="img">
-                    <h3>Book in Just 2 Tabs</h3>
-                    <p>Curabitur ac quam aliquam urna vehicula semper sed vel elit. Sed et leo purus. Vivamus vitae
-                        sapien.</p>
+            <div class="all-work">
+                <div class="work-content">
+                    <div class="work-child">
+                        <img src="images/work1.png" alt="img">
+                        <h3>Book in Just 2 Tabs</h3>
+                        <p>Curabitur ac quam aliquam urna vehicula semper sed vel elit. Sed et leo purus. Vivamus vitae
+                            sapien.</p>
+                    </div>
+                </div>
+                <div class="work-content">
+                    <div class="work-child">
+                        <img src="images/work2.png" alt="img">
+                        <h3>Get a Driver</h3>
+                        <p>Curabitur ac quam aliquam urna vehicula semper sed vel elit. Sed et leo purus. Vivamus vitae
+                            sapien.</p>
+                    </div>
+                </div>
+                <div class="work-content">
+                    <div class="work-child">
+                        <img src="images/work3.png" alt="img">
+                        <h3>Track your Driver</h3>
+                        <p>Curabitur ac quam aliquam urna vehicula semper sed vel elit. Sed et leo purus. Vivamus vitae
+                            sapien.</p>
+                    </div>
+                </div>
+                <div class="work-content">
+                    <div class="work-child">
+                        <img src="images/work4.png" alt="img">
+                        <h3>Arrive safely</h3>
+                        <p>Curabitur ac quam aliquam urna vehicula semper sed vel elit. Sed et leo purus. Vivamus vitae
+                            sapien.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Work End -->
+
+
+    <!-- Services Start -->
+    <div class="services">
+        <div class="services-container">
+            <div class="services-left">
+                <h2>Trusted Cab Services <br>in the World</h2>
+                <img src="images/header-border.png" alt="img">
+                <p>Curabitur placerat cursus nisi nec pharetra. Proin quis tortor fringilla, placerat nisi nec, auctor
+                    ex. Donec commodo orci ac lectus mattis, sed interdum sem scelerisque. Vivamus at euismod magna.
+                    Aenean semper risus nec dolor bibendum cursus. Donec eu odio eu ligula sagittis fringilla. Phasellus
+                    vulputate velit eu vehicula auctor. Nam vel pellentesque libero. Duis eget efficitur dui. Mauris
+                    tempor ex non tortor aliquet, et interdum mi dapibus. Phasellus ac dui nunc. Sed quis sagittis
+                    lorem, in blandit nibh.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="services-right">
+                <img src="images/services.png" alt="services-image">
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Download Start -->
+    <div class="download">
+        <div class="download-container">
+            <div class="download-header">
+                <h2>Download Carrgo</h2>
+                <img src="images/header-border.png" alt="img">
+            </div>
+            <div class="download-contents">
+                <div class="download-left">
+                    <img src="images/download_qr.png" alt="download-qr-image">
+                </div>
+                <div class="download-right">
+                    <h3>Download theCarrgo mobile application</h3>
+                    <p>Nunc volutpat tincidunt est a scelerisque. Aliquam erat volutpat. Donec varius ex in justo pharetra,
+                        nec mollis erat porta. Donec sit amet facilisis neque. In hac habitasse platea dictumst.</p>
+                        <div class="child-download-img">
+                            <div><img src="images/download-1.png" alt="img"></div>
+                            <div><img src="images/download-2.png" alt="img"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Download End -->
+
+
+    <script>
+        function toggleNavbar() {
+            var navbarContainer = document.querySelector('.navbar-container');
+            navbarContainer.classList.toggle('expanded');
+        }
+    </script>
 
 </body>
 
